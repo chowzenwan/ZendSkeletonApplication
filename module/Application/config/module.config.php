@@ -15,8 +15,8 @@ return array(
                 'options' => array(
                     'route'    => '/',
                     'defaults' => array(
-                        'controller' => 'Application\Controller\Index',
-                        'action'     => 'index',
+                        'controller' => 'Application\Controller\Curso',
+                        'action'     => 'listar',
                     ),
                 ),
             ),
@@ -69,7 +69,8 @@ return array(
     ),
     'controllers' => array(
         'invokables' => array(
-            'Application\Controller\Index' => 'Application\Controller\IndexController'
+            'Application\Controller\Index' => 'Application\Controller\IndexController',
+            'Application\Controller\Curso' => 'Application\Controller\CursoController',
         ),
     ),
     'view_manager' => array(
